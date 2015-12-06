@@ -1,0 +1,7 @@
+[drupal_hosts]
+localhost
+162.243.142.182
+
+[apache]
+localhost
+162.243.142.182
