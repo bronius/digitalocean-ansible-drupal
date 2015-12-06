@@ -3,7 +3,7 @@
 - hosts: drupal_hosts
 
   vars:
-    - db_name: drupald
+    - db_name: drupald7
     - db_user: drupald_user
     - db_password: owieu987
 
@@ -11,4 +11,4 @@
     - update
     - php
     - mysql
-    - drupal
+    - drupal7

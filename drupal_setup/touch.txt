@@ -1,1 +1,2 @@
-hi
+List items you would add and install and configure automatically with ansible for ansible.
+cowsay

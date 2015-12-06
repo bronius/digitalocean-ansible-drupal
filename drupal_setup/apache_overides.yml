@@ -1,0 +1,12 @@
+- hosts: all
+  tasks:
+    - name: Update apache2.conf
+      replace: dest=/etc/apache2/apache2.conf
+        regexp='<Directory /var/www/>\n\tOptions Indexes FollowSymLinks\n\tAllowOverride None'
+        replace='<Directory /var/www/>\n\tOptions Indexes FollowSymLinks\n\tAllowOverride All'
+        backup=yes
+      notify:
+        - restart apache2
+  handlers:
+    - name: restart apache2
+      service: name=apache2 state=restarted
